@@ -36,3 +36,36 @@ inventory:100
 
 }];
 
+for (let product of products) {
+    let discount = 0;
+
+
+switch (product.category) {
+    case "electronics":
+      discount = .2  
+    break;
+
+    case "household":
+    case "groceries":
+        discount = .1
+    break;
+
+    case "apparel":
+        discount = .15
+    break;
+
+    default:
+        discount=0;
+}
+
+let promoPrice = product.price * (1-discount);
+product.promoPrice = promoPrice.toFixed(2);
+
+}
+
+console.log(products);
+
+
+
+
+
