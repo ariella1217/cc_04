@@ -22,9 +22,9 @@ inventory:250
 },
 
 {sku:"sku-003",
-name:"bagel",
-category:"grocery",
-price:3.50,
+name:"lego",
+category:"toys",
+price:50.00,
 inventory:100
 },
 
@@ -66,17 +66,18 @@ product.promoPrice = promoPrice.toFixed(2);
 console.log(products);
 
 let customerType = "regular";
-let discount = 0;
+let otherDiscount = 0;
 
 if (customerType === "student") {
-    discount = .05; }
+    otherDiscount = .05; }
 else if (customerType === "senior") {
-    discount = 0.07 }
+    otherDiscount = 0.07 }
 else {
-    discount = 0
+    otherDiscount = 0
 }
 
-console.log()
+console.log(`Customer type: ${customerType}, Discount: ${otherDiscount * 100}%`);
+
 
 
 
