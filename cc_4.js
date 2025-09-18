@@ -65,6 +65,18 @@ product.promoPrice = promoPrice.toFixed(2);
 
 console.log(products);
 
+let customerType = "regular";
+let discount = 0;
+
+if (customerType === "student") {
+    discount = .05; }
+else if (customerType === "senior") {
+    discount = 0.07 }
+else {
+    discount = 0
+}
+
+console.log()
 
 
 
