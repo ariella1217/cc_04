@@ -100,10 +100,10 @@ for (let customerNumber = 0; customerNumber < 3; customerNumber++) {
     let discountedTotal = 0;
     while (i < customer.cart.length) {
         let productPromoPrice = products[customer.cart[i]].promoPrice;
-        //console.log("productPromoPrice"+ productPromoPrice);
+        
         discountedTotal = Number(discountedTotal) + Number(productPromoPrice);
         discountedTotal = discountedTotal.toFixed(2);
-        //console.log(discountedTotal);
+        
         products[customer.cart[i]].inventory--;
         i++;
     }
